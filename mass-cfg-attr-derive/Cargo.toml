@@ -1,0 +1,19 @@
+[package]
+name = "mass-cfg-attr-derive"
+version = "0.1.0"
+edition = "2021"
+authors = ["Daniel Mason <daniel@danielmason.com>"]
+description = "A way to mass toggle cfg-attr on attributes"
+license = "MIT"
+readme = "../README.md"
+keywords = ["derive", "cfg-attr"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.50"
+quote = "1.0.23"
+venial = "0.5.0"
