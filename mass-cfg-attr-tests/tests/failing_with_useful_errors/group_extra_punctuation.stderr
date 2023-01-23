@@ -1,0 +1,11 @@
+error: found unexpected punctuation ',' in group
+ --> tests/failing_with_useful_errors/group_extra_punctuation.rs:6:34
+  |
+6 | #[mass_cfg_attr(test, [must_use, , deprecated])]
+  |                                  ^
+
+error[E0422]: cannot find struct, variant or union type `ThreeInts` in this scope
+  --> tests/failing_with_useful_errors/group_extra_punctuation.rs:19:5
+   |
+19 |     ThreeInts {
+   |     ^^^^^^^^^ not found in this scope

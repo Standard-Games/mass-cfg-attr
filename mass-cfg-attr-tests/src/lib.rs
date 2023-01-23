@@ -10,6 +10,7 @@ mod tests {
             let test_case = TestCases::new();
             test_case.pass("tests/passing/*.rs");
             test_case.compile_fail("tests/failing_no_mass_cfg_attr/*.rs");
+            test_case.compile_fail("tests/failing_with_useful_errors/*.rs");
         }
     }
 }

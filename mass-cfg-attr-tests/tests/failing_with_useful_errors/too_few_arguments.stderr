@@ -1,0 +1,13 @@
+error: Not enough arguments, mass_cfg_attr takes two arguments, a predicate and a list of attributes to decorate
+ --> tests/failing_with_useful_errors/too_few_arguments.rs:6:1
+  |
+6 | #[mass_cfg_attr(test)]
+  | ^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: this error originates in the attribute macro `mass_cfg_attr` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0422]: cannot find struct, variant or union type `ThreeInts` in this scope
+  --> tests/failing_with_useful_errors/too_few_arguments.rs:19:5
+   |
+19 |     ThreeInts {
+   |     ^^^^^^^^^ not found in this scope

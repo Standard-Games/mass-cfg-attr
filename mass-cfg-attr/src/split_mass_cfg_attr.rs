@@ -14,7 +14,7 @@ fn find_comma(vec_tokens: &[TokenTree]) -> Option<usize> {
     })
 }
 
-#[derive(Debug, PartialEq)]
+#[derive(Debug)]
 pub(crate) enum SplitInnerError {
     NotEnoughArguments,
     TooManyArguments,

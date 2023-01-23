@@ -1,13 +1,14 @@
 [package]
 name = "mass-cfg-attr"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 authors = ["Daniel Mason <daniel@danielmason.com>"]
 description = "A way to mass toggle cfg-attr on attributes"
 license = "MIT"
 readme = "../README.md"
-keywords = ["derive", "cfg-attr"]
+keywords = ["derive", "cfg-attr", "attribute"]
 rust-version = "1.65"
+repository = "https://github.com/Standard-Games/mass-cfg-attr"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
