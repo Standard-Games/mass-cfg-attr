@@ -1,14 +1,5 @@
-[package]
-name = "mass-cfg-attr"
-version = "0.1.0"
-edition = "2021"
-authors = ["Daniel Mason <daniel@danielmason.com>"]
-description = "A way to mass toggle cfg-attr on attributes"
-license = "MIT"
-readme = "README.md"
-keywords = ["derive", "cfg-attr"]
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
-[dependencies]
-mass-cfg-attr-derive = { path = "./mass-cfg-attr-derive", version = "*" }
+[workspace]
+members = [
+    "mass-cfg-attr",
+    "mass-cfg-attr-tests",
+]

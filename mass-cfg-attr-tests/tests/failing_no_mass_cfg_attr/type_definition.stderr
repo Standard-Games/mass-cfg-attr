@@ -1,0 +1,11 @@
+error: use of deprecated type alias `TypeDefinition`
+ --> tests/failing_no_mass_cfg_attr/type_definition.rs:9:12
+  |
+9 |     let _: TypeDefinition = ();
+  |            ^^^^^^^^^^^^^^
+  |
+note: the lint level is defined here
+ --> tests/failing_no_mass_cfg_attr/type_definition.rs:1:26
+  |
+1 | #![deny(unused_must_use, deprecated)]
+  |                          ^^^^^^^^^^

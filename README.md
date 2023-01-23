@@ -9,9 +9,10 @@ extra work, makes your code harder to read and creates extra risk. `mass_cfg_att
 
 **Without mass_cfg_attr**:
 ```rust
+#[derive(SomeAutoWirer)]
 struct MyStruct;
 
-#[derive(SomeAutoWirer)]
+#[cfg_attr(not(any(test, doctest)), auto_wire)]
 impl MyStruct {
     #[cfg_attr(not(any(test, doctest)), wire(options))]
     fn func_one(self) {
@@ -33,10 +34,11 @@ impl MyStruct {
 **With mass_cfg_attr**
 
 ```rust
+#[derive(SomeAutoWirer)]
 struct MyStruct;
 
-#[mass_cfg_attr(not(any(test, doctest)), [wire, wire_more])]
-#[derive(SomeAutoWirer)]
+#[mass_cfg_attr(not(any(test, doctest)), [auto_wire, wire, wire_more])]
+#[auto_wire]
 impl MyStruct {
     #[wire(options)]
     fn func_one(self) {
