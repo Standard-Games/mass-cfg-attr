@@ -7,7 +7,7 @@ description = "A way to mass toggle cfg-attr on attributes"
 license = "MIT"
 readme = "../README.md"
 keywords = ["derive", "cfg-attr", "attribute"]
-rust-version = "1.65"
+rust-version = "1.56.1"
 repository = "https://github.com/Standard-Games/mass-cfg-attr"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
