@@ -2,4 +2,5 @@
 members = [
     "mass-cfg-attr",
     "mass-cfg-attr-tests",
+    "mass-cfg-attr-tests-tests",
 ]
